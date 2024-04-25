@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Menu } from "lucide-react";
 import Menus from "./Menus";
+import { AnimatePresence } from "framer-motion";
 
 const Navbar = () => {
   const [active, setActive] = useState(false);
@@ -11,7 +12,9 @@ const Navbar = () => {
         <h1 className="text-3xl">Logo</h1>
         <Menu className="cursor-pointer" onClick={() => setActive(true)} />
       </div>
-      {active && <Menus active={active} setActive={setActive} />}
+      <AnimatePresence>
+        {active && <Menus active={active} setActive={setActive} />}
+      </AnimatePresence>
     </nav>
   );
 };

@@ -1,10 +1,14 @@
 import "./App.css";
-import Navbar from "./Components/NavBar/Navbar";
+// import Navbar from "./Components/NavBar/Navbar";
+// import DropDown from "./Components/DropDown/DropDown";
+import ImagePreview from "./Components/ImagePreview/ImagePreview";
 
 function App() {
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
+      {/* <DropDown /> */}
+      <ImagePreview />
     </div>
   );
 }
