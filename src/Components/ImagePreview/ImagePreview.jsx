@@ -7,17 +7,19 @@ const ImagePreview = () => {
   const [index, setIndex] = useState(null);
   const elements = [];
 
-  for (let i = 0; i <= 19; i++) {
+  for (let i = 1; i <= 20; i++) {
     elements.push(
       <motion.div
         initial={{ height: 0, opacity: 0 }}
         animate={{ height: 200, opacity: 1 }}
-        transition={{ delay: i * 0.2 }}
+        transition={{ delay: 0.2 }}
         className="flex-1 basis-72 h-48 rounded-lg bg-gray-200 cursor-pointer"
         onClick={() => {
-          setActive(i);
-          setIndex(i);
+          setActive(i + "a");
+          setIndex(i + "a");
         }}
+        layoutId={i + "a"}
+        key={i + "a"}
       ></motion.div>
     );
   }
