@@ -3,8 +3,8 @@ import Preview from "./Preview";
 import { motion, AnimatePresence } from "framer-motion";
 
 const ImagePreview = () => {
-  const [active, setActive] = useState(false);
-  const [index, setIndex] = useState(null);
+  const [active, setActive] = useState(false); //setting preview active
+  const [index, setIndex] = useState(null); //passing index as props
   const elements = [];
 
   for (let i = 1; i <= 20; i++) {
