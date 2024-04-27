@@ -2,7 +2,7 @@
 
 ## Navigation Bar
 
-![Video Preview](./public/assets/PreviewVideos/NaviagtionBar.webm)
+![Video Preview](https://drive.google.com/file/d/1uVw9MFYlKK42LAUfNYbGFVMyu796yfPf/view?usp=sharing)
 
 In the project directory, you can run:
 
