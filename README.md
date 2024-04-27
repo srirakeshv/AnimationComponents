@@ -2,7 +2,7 @@
 
 ## Navigation Bar
 
-![Video Preview](https://drive.google.com/file/d/1uVw9MFYlKK42LAUfNYbGFVMyu796yfPf/view?usp=sharing)
+![Video Preview](./public/assets/PreviewVideos/NaviagtionBar.gif)
 
 In the project directory, you can run:
 
