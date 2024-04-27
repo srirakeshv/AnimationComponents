@@ -1,8 +1,8 @@
-# Getting Started with Create React App
+# Framer Motion Animation Components
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Navigation Bar
 
-## Available Scripts
+![Video Preview](./public/assets/PreviewVideos/NaviagtionBar.webm)
 
 In the project directory, you can run:
 

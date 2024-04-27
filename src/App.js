@@ -2,7 +2,7 @@ import "./App.css";
 // import Navbar from "./Components/NavBar/Navbar";
 // import DropDown from "./Components/DropDown/DropDown";
 // import ImagePreview from "./Components/ImagePreview/ImagePreview";
-import SideBar from "./Components/SideBar/SideBar";
+import Fullscreen from "./Components/SideBar/Fullscreen";
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       {/* <Navbar /> */}
       {/* <DropDown /> */}
       {/* <ImagePreview /> */}
-      <SideBar />
+      <Fullscreen />
     </div>
   );
 }

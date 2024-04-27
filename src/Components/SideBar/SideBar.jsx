@@ -36,18 +36,12 @@ const SideBar = () => {
       menuname: "Settings",
     },
   ];
+
   return (
     <motion.aside
       initial={{ width: 80 }}
-      animate={{ width: active ? 200 : 80 }}
-      transition={{ duration: 1 }}
-      exit={{
-        width: 80,
-        transition: {
-          ease: "easeInOut",
-          delay: 0.6,
-        },
-      }}
+      animate={{ width: active ? 220 : 80 }}
+      transition={{ duration: 1, type: "spring", damping: 10 }}
       className={`${
         active ? "w-44 items-start" : "w-20 items-center"
       } bg-blue-500 rounded-r-md p-4 px-5 flex flex-col  justify-between relative`}
@@ -65,24 +59,25 @@ const SideBar = () => {
       </motion.div>
       <div>
         <UserRound size={30} className="text-white" />
-        {active && (
-          <motion.span
-            initial={{ y: 20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.6 }}
-            exit={{
-              y: 20,
-              opacity: 0,
-              transition: {
-                ease: "easeInOut",
-                delay: 0.2,
-              },
-            }}
-            className="text-white font-semibold flex flex-col gap-2"
-          >
-            Sri Rakesh V
-          </motion.span>
-        )}
+        <AnimatePresence>
+          {active && (
+            <motion.span
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.6 }}
+              exit={{
+                opacity: 0,
+                transition: {
+                  ease: "easeInOut",
+                  delay: 0.1,
+                },
+              }}
+              className="text-white font-semibold flex flex-col gap-2"
+            >
+              Sri Rakesh V
+            </motion.span>
+          )}
+        </AnimatePresence>
       </div>
       <ul
         className={`flex flex-col gap-8 ${
@@ -95,15 +90,15 @@ const SideBar = () => {
             <AnimatePresence>
               {active && (
                 <motion.span
-                  initial={{ x: 20, opacity: 0 }}
-                  animate={{ x: 0, opacity: 1 }}
+                  initial={{ width: 0, opacity: 0 }}
+                  animate={{ width: "auto", opacity: 1 }}
                   transition={{ duration: 0.6 }}
                   exit={{
-                    x: 20,
+                    width: 0,
                     opacity: 0,
                     transition: {
                       ease: "easeInOut",
-                      delay: 0.2,
+                      delay: 0.1,
                     },
                   }}
                   className="text-white"
