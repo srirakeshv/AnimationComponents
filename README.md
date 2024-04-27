@@ -16,7 +16,7 @@ This repository contains a collection of animated components built using React, 
 
 ### Getting Started
 
-Clone the repository: [git clone](https://github.com/your_username/animationcomponents.git)
+Clone the repository: [git clone](https://github.com/srirakeshv/AnimationComponents.git)
 
 Install dependencies: `npm install`
 
