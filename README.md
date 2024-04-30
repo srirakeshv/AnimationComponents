@@ -37,3 +37,7 @@ Start the development server: `npm start`
 ## Cards
 
 ![Video Preview](./public/assets/PreviewVideos/Cards.gif)
+
+## Snack Bar
+
+![Video Preview](./public/assets/PreviewVideos/SnackBar.gif)
